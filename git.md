@@ -53,6 +53,16 @@ $ git push origin :test              // 刚提交到远程的test将被删除，
 创建远程版本(本地版本push到远程)：$ git push origin [name]
 删除远程版本：$ git push origin :refs/tags/[name]
 
+查看git的提交版本和id 拿到需要恢复的版本号 
+　       命令：git log　 
+
+　  2. 恢复到指定版本 
+
+　　　命令：git reset --hard 48d628ae6af80d9aeed6293d6090de8281b303fc   
+
+                      //后面这一大串48d628ae6af80d9aeed6293d6090de8281b303fc就是版本id
+                      
+                      
 4) 子模块(submodule)相关操作命令
 添加子模块：$ git submodule add [url] [path]
 如：$ git submodule add git://github.com/soberh/ui-libs.git src/main/webapp/ui-libs
